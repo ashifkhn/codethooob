@@ -5,15 +5,10 @@ import './homepage.scss'
 import axios from 'axios'
 import { PuffLoader } from 'react-spinners'
 
-// console.log(videos)
 export const HomePage = () => {
 	const [showVideoList, setShowVideoList] = useState([])
 	const [loader, setLoader] = useState(true)
-	const ApiCall = () => {
-		axios.get(`/api/videos`).then((res) => {
-			console.log(res)
-		})
-	}
+
 	useEffect(() => {
 		axios
 			.get(`/api/videos`)
@@ -25,6 +20,7 @@ export const HomePage = () => {
 				console.log(err)
 			})
 	}, [])
+
 	console.log(showVideoList)
 	return (
 		<>
@@ -41,7 +37,7 @@ export const HomePage = () => {
 						<div className='navbar_and_content_container'>
 							<Navbar />
 							{showVideoList.map((video) => {
-								return <h1>{video.title}</h1>
+								return <h1 key={video.id}>{video.title}</h1>
 							})}
 						</div>
 					</div>
