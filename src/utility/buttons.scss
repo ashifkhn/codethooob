@@ -1,0 +1,60 @@
+.btn_primary {
+  border: none;
+  background-color: #ff9c41;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-family: Gotham;
+  font-weight: 800;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 1rem;
+  &:hover {
+    background-color: #dc7f25;
+  }
+}
+
+.btn_secondary {
+  border: none;
+  background-color: #3c425e;
+  padding: 1rem 4rem;
+  max-width: 100%;
+  color: #fff;
+  font-family: "Gotham";
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  font-family: Gotham;
+  font-weight: 800;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #888888;
+  }
+}
+
+.btn_primary_small {
+  border: none;
+  background-color: #ff9c41;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-family: Gotham;
+  font-weight: 800;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 1rem;
+  &:hover {
+    background-color: #888888;
+  }
+}

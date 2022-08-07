@@ -1,0 +1,28 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: #f9f9fb;
+	.sidebar_container_dashboard {
+	}
+	.navbar_and_content_container {
+		flex: 1;
+		background-color: #f9f9fb;
+	}
+}
+
+.overlay_1 {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

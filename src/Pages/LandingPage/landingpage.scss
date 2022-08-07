@@ -1,0 +1,119 @@
+.login_page_container {
+	height: 100vh;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	font-family: Gotham;
+	.image_container_login_page {
+		background-color: #0b1235;
+		width: 40%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		.logo {
+			img {
+				max-width: 100%;
+			}
+		}
+		.login_screen_image {
+			padding: 1rem;
+			img {
+				max-width: 100%;
+			}
+		}
+		.brand_message {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: var(--secondary);
+			font-family: Gotham;
+			gap: 0.5rem;
+			h3 {
+				padding: 0;
+				margin: 0;
+			}
+			p {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+	.login_container_main {
+		flex: 1;
+		padding-left: 5%;
+		padding-right: 20%;
+
+		.login_page_content {
+			h1 {
+				color: #252733;
+			}
+			.enter_email_message {
+				color: #979797;
+				margin-bottom: 2rem;
+			}
+			.input_container {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+				position: relative;
+				margin-top: 1rem;
+				input {
+					padding: 1rem 2.5rem 1rem 1rem;
+					border: none;
+					width: 100%;
+					font-size: 1.2rem;
+					border-radius: 0.2rem;
+					border: 0.5px solid rgba(0, 1, 16, 0.5);
+					opacity: 100%;
+					font-family: 'Gotham';
+					color: #323233;
+				}
+				input:focus {
+					outline: none !important;
+					border: 0.5px solid #ff9c41;
+				}
+				label {
+					color: #252733;
+				}
+				input:active {
+					border: none;
+				}
+				.input_and_icons {
+					display: flex;
+					align-items: center;
+					position: relative;
+					.eye_icon {
+						position: absolute;
+						right: 0.5rem;
+						cursor: pointer;
+						color: #737b7b;
+					}
+				}
+			}
+			.invalid_email {
+				color: #d60009;
+			}
+			.btn_container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #000;
+				margin: 1rem 0;
+			}
+			.forget_password {
+				display: flex;
+				color: #0b1235;
+				font-weight: 500;
+				padding: 0.5rem 0;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				&:hover {
+					color: #888888;
+				}
+			}
+		}
+	}
+}
